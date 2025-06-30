@@ -218,6 +218,43 @@
 				"code" : "visualisation := Visualisation javaFiles: (files sorted: [:a :b | a basename < b basename]) "
 			},
 			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-30T17:05:16.26139+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-30T17:07:40.004081+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "9vGkFy31DQCUSCchBPBxxg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "When we want to show metrics for each file, we can create a class that returns different metrics, which we can show as nested colored rectangles in the UMLClassElement. Let's make a first one where background colour is based on the size of the file, width is the number of mocks, and height is the number of imports."
+			},
+			{
 				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -242,14 +279,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-30T16:36:23.49155+02:00"
+						"dateAndTimeString" : "2025-06-30T17:17:46.210902+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "UDzWriz1DQCTRrTPBPBxxg=="
 				},
-				"code" : "metrics :=FileMetrics on: files first"
+				"code" : "metrics :=FileMetrics on: files second"
 			}
 		]
 	},

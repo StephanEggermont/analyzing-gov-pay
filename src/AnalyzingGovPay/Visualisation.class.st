@@ -39,8 +39,8 @@ Visualisation class >> javaFiles: files [
 			view nodes
 				shape: [ :metrics | 
 					BlElement new
-						background: (self backgroundForMetrics: metrics);
-						size: (self sizeForMetrics: metrics);
+						background: (metrics background);
+						size: (metrics metricsSize);
 						yourself ];
 				with: (Array with: (FileMetrics on: file) )].
 	view layout rectanglePack.
