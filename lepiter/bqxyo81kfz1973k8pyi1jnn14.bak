@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-30T12:08:35.188207+02:00"
+						"dateAndTimeString" : "2025-06-30T12:11:43.545401+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,78 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "One of the rhttps://github.dev/alphagov/pay-publicapi"
+				"string" : "One of the repositories is https://github.dev/alphagov/pay-publicapi."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-30T12:11:49.530164+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-30T12:17:56.798792+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "nJMz/ij1DQCAGvHPBPBxxg=="
+				},
+				"code" : "workingDirectory := FileLocator temp resolve / 'example-clone'.\rworkingDirectory exists ifTrue: [ workingDirectory deleteAll ].\rgitUrl := PureGitUrl with: 'git@github.com:alphagov/pay-publicapi.git'.\r(gitUrl cloneWithOwnerPrefixIn: workingDirectory)\r\tthen: [ :result | repository := result repository ]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-30T12:19:34.00144+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-30T12:19:36.434349+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "uNHiGSn1DQCCGjJgBPBxxg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "L"
 			}
 		]
 	},
