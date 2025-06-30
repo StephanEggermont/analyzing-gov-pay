@@ -5,7 +5,7 @@ Class {
 }
 
 { #category : #accessing }
-Visualisation class >> backgroundForFile: aMetrics [ 
+Visualisation class >> backgroundForMetrics: aMetrics [ 
 	| file |
 	file := aMetrics file.
 	file size <1000 ifTrue: [^Color green].
@@ -39,8 +39,8 @@ Visualisation class >> javaFiles: files [
 			view nodes
 				shape: [ :metrics | 
 					BlElement new
-						background: (self backgroundForFile: metrics);
-						size: (self sizeForFile: metrics);
+						background: (self backgroundForMetrics: metrics);
+						size: (self sizeForMetrics: metrics);
 						yourself ];
 				with: (Array with: (FileMetrics on: file) )].
 	view layout rectanglePack.
@@ -48,7 +48,7 @@ Visualisation class >> javaFiles: files [
 ]
 
 { #category : #accessing }
-Visualisation class >> sizeForFile: aMetrics [ 
+Visualisation class >> sizeForMetrics: aMetrics [ 
 	|nrOfMocks nrOfImports|
 nrOfMocks := (aMetrics file contents allRegexMatches: '@Mock') size.
 	nrOfImports := (aMetrics file contents allRegexMatches: 'import') size.
