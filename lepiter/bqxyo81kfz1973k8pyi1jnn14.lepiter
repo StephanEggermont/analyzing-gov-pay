@@ -287,6 +287,43 @@
 					"uidString" : "UDzWriz1DQCTRrTPBPBxxg=="
 				},
 				"code" : "metrics :=FileMetrics on: files second"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-30T17:32:37.951782+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-30T17:33:26.373058+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Pit/eS31DQCbvLZNBPBxxg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The background of each UMLClassElement we can color based on if there is a Test class with a corresponding name (green) or not (yellow)"
 			}
 		]
 	},

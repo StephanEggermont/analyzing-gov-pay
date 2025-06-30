@@ -1,8 +1,23 @@
 Class {
 	#name : #Visualisation,
 	#superclass : #Object,
+	#classInstVars : [
+		'allFiles'
+	],
 	#category : #'AnalyzingGovPay-Visualisation'
 }
+
+{ #category : #accessing }
+Visualisation class >> backgroundForFile: aFile [ 
+
+	(aFile basename matches: '*Test*') ifTrue: [
+		allFiles detect: [:f | (aFile basename allButLast: 9) = (f basename allButLast: 5)] ifFound: [^Color lightGreen]
+		 ifNone: [^Color lightYellow]].
+	(aFile basename matches: '*Test*') ifFalse: [
+		allFiles detect: [:f | (f basename allButLast: 9) = (aFile basename allButLast: 5)] ifFound: [^Color lightYellow]
+		 ifNone: [^Color lightGreen]].
+	^Color lightRed
+]
 
 { #category : #accessing }
 Visualisation class >> backgroundForMetrics: aMetrics [ 
@@ -28,12 +43,14 @@ Visualisation class >> borderForFile: aFile [
 Visualisation class >> javaFiles: files [
 	<gtExample>
 	| view |
+	allFiles := files.
 	view := GtMondrian new.
 	view nodes
 		shape: [ :each | 
 			GtMondrianUMLClassElement withDefaultContainer
 				label: each basename;
-				border: (self borderForFile: each) ];
+				border: (self borderForFile: each) ;
+				background: (self backgroundForFile: each)];
 		with: files;
 		forEach: [ :file | 
 			view nodes
