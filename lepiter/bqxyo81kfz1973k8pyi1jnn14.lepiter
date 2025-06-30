@@ -100,7 +100,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-30T12:19:44.752877+02:00"
+						"dateAndTimeString" : "2025-06-30T16:27:53.500996+02:00"
 					}
 				},
 				"uid" : {
@@ -110,7 +110,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Let's take a look at the java files"
+				"string" : "Let's take a look at the java files..."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -208,14 +208,48 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-30T15:49:08.401258+02:00"
+						"dateAndTimeString" : "2025-06-30T16:35:44.697946+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "nPFLACz1DQCPq1raBPBxxg=="
 				},
-				"code" : "visualisation := Visualisation javaFiles: files"
+				"code" : "visualisation := Visualisation javaFiles: (files sorted: [:a :b | a basename < b basename]) "
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-30T16:35:57.882556+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-30T16:36:23.49155+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "UDzWriz1DQCTRrTPBPBxxg=="
+				},
+				"code" : "metrics :=FileMetrics on: files first"
 			}
 		]
 	},
