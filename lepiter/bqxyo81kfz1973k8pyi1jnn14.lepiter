@@ -197,7 +197,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-30T15:31:07.858981+02:00"
+						"dateAndTimeString" : "2025-06-30T15:47:09.583452+02:00"
 					}
 				},
 				"editEmail" : {
@@ -208,14 +208,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-30T15:35:47.330118+02:00"
+						"dateAndTimeString" : "2025-06-30T15:49:08.401258+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Eiz5xiv1DQCIieY6BPBxxg=="
+					"uidString" : "nPFLACz1DQCPq1raBPBxxg=="
 				},
-				"code" : "view := GtMondrian new.\rview nodes\r\tshape: [ :each | GtMondrianUMLClassElement withDefaultContainer label: each basename ];\r\twith: files.\rview layout rectanglePack.\rview"
+				"code" : "visualisation := Visualisation javaFiles: files"
 			}
 		]
 	},
