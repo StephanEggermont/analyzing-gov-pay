@@ -5,6 +5,13 @@ Class {
 }
 
 { #category : #accessing }
+Visualisation class >> borderForFile: aFile [
+	(aFile basename matches: '*Test*')
+		ifTrue: [ ^ BlBorder paint: Color green width: 3 ].
+	^ BlBorder paint: Color gray
+]
+
+{ #category : #accessing }
 Visualisation class >> javaFiles: files [
 	<gtExample>
 	| view |
@@ -13,9 +20,7 @@ Visualisation class >> javaFiles: files [
 		shape: [ :each | 
 			GtMondrianUMLClassElement withDefaultContainer
 				label: each basename;
-				border: ((each basename matches: '*Test*')
-						ifTrue: [ BlBorder paint: Color green width: 3 ]
-						ifFalse: [ BlBorder paint: Color gray ]) ];
+				border: (self borderForFile: each) ];
 		with: files.
 	view layout rectanglePack.
 	^ view
