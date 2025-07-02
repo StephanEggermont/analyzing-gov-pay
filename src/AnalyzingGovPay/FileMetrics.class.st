@@ -2,7 +2,8 @@ Class {
 	#name : #FileMetrics,
 	#superclass : #Object,
 	#instVars : [
-		'file'
+		'file',
+		'metrics'
 	],
 	#category : #'AnalyzingGovPay-Visualisation'
 }
@@ -22,13 +23,34 @@ FileMetrics >> background [
 ]
 
 { #category : #accessing }
+FileMetrics >> calculateMetrics [
+	|metric|
+	metric := FileMetric new.
+	metric backgroundValue: file size.
+	metric metricsSize: self metricsSize.
+	metrics add: metric
+]
+
+{ #category : #accessing }
 FileMetrics >> file [
 	^ file
 ]
 
 { #category : #accessing }
 FileMetrics >> file: aFileReference [ 
-	file := aFileReference
+	file := aFileReference.
+	metrics := OrderedCollection new.
+	self calculateMetrics
+]
+
+{ #category : #accessing }
+FileMetrics >> metrics [
+	^ metrics ifNil: [^#()]
+]
+
+{ #category : #accessing }
+FileMetrics >> metrics: anObject [
+	metrics := anObject
 ]
 
 { #category : #'as yet unclassified' }

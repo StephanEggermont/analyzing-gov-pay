@@ -59,7 +59,7 @@ Visualisation class >> javaFiles: files [
 						background: (metrics background);
 						size: (metrics metricsSize);
 						yourself ];
-				with: (Array with: (FileMetrics on: file) )].
+				with: ((FileMetrics on: file) metrics)].
 	view layout rectanglePack.
 	^ view
 ]
