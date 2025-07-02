@@ -27,8 +27,13 @@ FileMetrics >> calculateMetrics [
 	|metric|
 	metric := FileMetric new.
 	metric backgroundValue: file size.
+	metric metricsSize: self testsSize.
+	metrics add: metric.
+	metric := FileMetric new.
+	metric backgroundValue: file size.
 	metric metricsSize: self metricsSize.
-	metrics add: metric
+	metrics add: metric.
+
 ]
 
 { #category : #accessing }
@@ -78,4 +83,12 @@ FileMetrics >> oneFileMetrics: aView [
 
 			m ]
 	
+]
+
+{ #category : #'as yet unclassified' }
+FileMetrics >> testsSize [
+	|nrOfMocks nrOfTests|
+nrOfMocks := (file contents allRegexMatches: '@Mock') size.
+	nrOfTests := (file contents allRegexMatches: '@Test') size.
+	^(3 max: nrOfMocks ) @ ( 3 max: nrOfTests)
 ]

@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-30T12:11:43.545401+02:00"
+						"dateAndTimeString" : "2025-07-02T12:17:59.304378+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "One of the repositories is https://github.dev/alphagov/pay-publicapi."
+				"string" : "\nOne of the repositories is https://github.dev/alphagov/pay-publicapi."
 			},
 			{
 				"__type" : "pharoSnippet",

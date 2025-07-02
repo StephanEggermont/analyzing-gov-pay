@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-30T12:07:11.124938+02:00"
+						"dateAndTimeString" : "2025-07-02T12:18:19.296488+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,20 +29,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-30T12:07:48.33645+02:00"
+						"dateAndTimeString" : "2025-07-02T12:19:19.831736+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "AHqb7Sj1DQC+3Ij4BPBxxg=="
+					"uidString" : "ArcdUVH1DQCnF7+9AMyWzg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Getting started]]\n"
+				"string" : "GToolkit has a SmaCC based parser, which can parse the java files. "
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-30T12:06:47.759968+02:00"
+						"dateAndTimeString" : "2025-07-02T12:19:28.028016+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-30T12:06:47.759968+02:00"
+						"dateAndTimeString" : "2025-07-02T12:19:28.028016+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "l/Q27Cj1DQC+25lMBPBxxg=="
+					"uidString" : "nnI2VVH1DQCoabuGAMyWzg=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
+				"code" : ""
 			}
 		]
 	},
@@ -88,7 +85,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-06-30T12:06:47.706674+02:00"
+			"dateAndTimeString" : "2025-07-02T12:18:19.263539+02:00"
 		}
 	},
 	"editEmail" : {
@@ -99,15 +96,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-06-30T12:07:07.079712+02:00"
+			"dateAndTimeString" : "2025-07-02T12:18:19.263539+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Analyse GOV.UK Pay"
+		"title" : "Parsing the java files"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "f52236ec-28f5-0d00-beda-1baf04f071c6"
+		"uuid" : "77311d51-51f5-0d00-a716-f6e700cc96ce"
 	}
 }

@@ -313,7 +313,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-30T17:33:17.254716+02:00"
+						"dateAndTimeString" : "2025-06-30T17:33:26.373058+02:00"
 					}
 				},
 				"uid" : {
@@ -323,7 +323,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "The background of each UMLClassElement we can color based on if there is a Test class with a correspondin"
+				"string" : "The background of each UMLClassElement we can color based on if there is a Test class with a corresponding name (green) or not (yellow)"
 			}
 		]
 	},

@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-30T12:07:48.33645+02:00"
+						"dateAndTimeString" : "2025-07-02T12:18:12.862953+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Getting started]]\n"
+				"string" : "[[Getting started]]\n[[Parsing the java files]]\n"
 			},
 			{
 				"__type" : "textSnippet",

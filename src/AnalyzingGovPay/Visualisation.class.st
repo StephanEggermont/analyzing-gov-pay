@@ -48,7 +48,7 @@ Visualisation class >> javaFiles: files [
 	view nodes
 		shape: [ :each | 
 			GtMondrianUMLClassElement withDefaultContainer
-				label: each basename;
+				label: each basenameWithoutExtension;
 				border: (self borderForFile: each) ;
 				background: (self backgroundForFile: each)];
 		with: files;
@@ -66,8 +66,8 @@ Visualisation class >> javaFiles: files [
 
 { #category : #accessing }
 Visualisation class >> sizeForMetrics: aMetrics [ 
-	|nrOfMocks nrOfImports|
+	|nrOfMocks nrOfTests|
 nrOfMocks := (aMetrics file contents allRegexMatches: '@Mock') size.
-	nrOfImports := (aMetrics file contents allRegexMatches: 'import') size.
-	^(3 max: nrOfMocks ) @ ( 3 max: nrOfImports)
+	nrOfTests := (aMetrics file contents allRegexMatches: '@Test') size.
+	^(3 max: nrOfMocks ) @ ( 3 max: nrOfTests)
 ]
