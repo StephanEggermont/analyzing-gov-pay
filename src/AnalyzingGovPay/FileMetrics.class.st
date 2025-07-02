@@ -3,7 +3,8 @@ Class {
 	#superclass : #Object,
 	#instVars : [
 		'file',
-		'metrics'
+		'metrics',
+		'parsed'
 	],
 	#category : #'AnalyzingGovPay-Visualisation'
 }
@@ -44,6 +45,7 @@ FileMetrics >> file [
 { #category : #accessing }
 FileMetrics >> file: aFileReference [ 
 	file := aFileReference.
+	parsed := JavaParser parse: file contents.
 	metrics := OrderedCollection new.
 	self calculateMetrics
 ]

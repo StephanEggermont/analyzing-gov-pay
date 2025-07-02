@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-02T12:19:19.831736+02:00"
+						"dateAndTimeString" : "2025-07-02T14:50:07.744239+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "GToolkit has a SmaCC based parser, which can parse the java files. "
+				"string" : "GToolkit has a SmaCC based parser, which can parse the java files. Let's start now building a real model to work in."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-02T12:19:28.028016+02:00"
+						"dateAndTimeString" : "2025-07-02T15:48:27.143802+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "nnI2VVH1DQCoabuGAMyWzg=="
 				},
-				"code" : ""
+				"code" : "model := RepoModel default.\rmodel url: 'git@github.com:alphagov/pay-publicapi.git'.\rmodel clone.\rmodel addFilesMatching: '*.java'.\rmodel visualize"
 			}
 		]
 	},

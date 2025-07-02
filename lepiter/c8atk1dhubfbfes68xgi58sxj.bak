@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-02T12:19:12.661672+02:00"
+						"dateAndTimeString" : "2025-07-02T14:50:07.744239+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,75 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "GToolkit has a SmaCC based parser, which can parse the files"
+				"string" : "GToolkit has a SmaCC based parser, which can parse the java files. Let's start now building a real model to work in."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-02T12:19:28.028016+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-02T15:26:17.966678+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "nnI2VVH1DQCoabuGAMyWzg=="
+				},
+				"code" : "model := RepoModel default.\rmodel url: 'git@github.com:alphagov/pay-publicapi.git'.\rmodel clone.\r"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-02T15:26:14.177089+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-02T15:26:19.833044+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "rrQm8VP1DQCsGmFkAMyWzg=="
+				},
+				"code" : "model addFilesMatching: '*.java'.\rmodel visualize\r"
 			}
 		]
 	},
